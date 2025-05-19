@@ -1,0 +1,131 @@
+/*      p {
+    font-family: Roboto ;
+    margin-top: 0;
+    margin-bottom: 0;
+    } */
+
+.thumbnail {
+    font-size: 30px;
+    /*works but no change as no font only img*/
+    position: relative;
+    /*width: 300px;*/
+    /* forcing thumbnail to be of the width*/
+    width: 100%;
+    /*height also adjust itself to maintain img if height not specified explicitly*/
+    /*height: 200px;now its stretched*/
+    object-fit: cover;
+    /*img property to fit it*/
+    object-position: bottom;
+    /*show img side if unable to show full img*/
+    /*border-width: 2px;
+            border-style: solid;
+            border-color: red;*/
+
+
+
+}
+
+.thumbnail-row {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+/* .search-bar {
+            font-size: 20px;
+            margin-left: 12px;
+            display: block;
+            changing inline-block to block element
+            display block causes element to take full line when aligned center
+            } */
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.video-stats,
+.video-author {
+
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+
+.video-preview {
+    /* width: 200; 
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;*/
+}
+
+.channel-picture {
+    /* display: inline-block; /*Problem with this technique == alignment problem*/
+    /*takes space from the div tag removing them causes readibility problem*/
+    /* width: 50px;
+                vertical-align: top;
+                size: 50px;*/
+
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    text-decoration: underline; /*inheritance not all property are effected by inheritance (commonly effect text and not effect border)*/
+}
+
+@media (max-width:800px){ /* makes css responsive */
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media  (min-width:1100px){
+     .video-grid{
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+}
+
+.video-info {
+    /*display: inline-block;*/
+    width: 200px;
+}
+
+.channel-imginfo {
+    width: 36px;
+    border-radius: 50px;
+}
+
+
+
+.video-time {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;    /*short hand property means shortcut*/
+    border-radius: 2px;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    z-index: 1;
+}
