@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>yOuTuBe.CoM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header></header> <!--semantic elements outermost div-->
+    <nav></nav><!--navigation-->
+    <main></main><!--important part-->
+    <section></section><!--inside main-->
+    <div class="header">
+        <div class="left-section">
+            <img class="menu" src="images/Dashboard/menu.png">
+            <img class="youtube-logo" src="images/Dashboard/youtube.svg">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="textbox" placeholder="Search">
+            <button class="search-button">
+                <img class="search-icon" src="images\Dashboard\search.svg">
+                <div class="tooltip">search</div>
+            </button>
+            <button class="mic-button">
+                <img class="mic-icon" src="images\Dashboard\mic.svg">
+                <div class="tooltip">search by voice</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <img class="upload-icon" src="images/Dashboard/record.svg">
+            <img class="youtube-apps-icon" src="images/Dashboard/matrix.svg">
+            <div class="notification-icon-container">
+                <img class="notification-icon" src="images/Dashboard/notification.svg">
+                <div class="notification-count">3</div>
+            </div>
+            <img class="user-icon" src="images/Dashboard/user.jpg">
+        </div>
+
+
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img src="images/Dashboard/home.svg">
+            <div>home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="images/Dashboard/explore.svg">
+            <div>explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="images/Dashboard/subscription.svg">
+            <div>subscription</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="images/Dashboard/originals.svg">
+            <div>originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="images/Dashboard/youtube-music.svg">
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="images/Dashboard/library.png">
+            <div>Library</div>
+        </div>
+    </div>
+
+
+
+    <div class="video-grid">
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row"><!--nested layout technique Vert-horizontal nesting-->
+                <img class="thumbnail" src="images\thumbnail\youtube img1.avif">
+                <!--img is a inline-block element== takes only space needed-->
+                <div class="video-time">14:20 </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="channel-imginfo" src="images\channel\channel img 1.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Earn on P2P Swaps: USDC - WETH with No Fees, No Limits Profit 3k$ daily on USDC.
+                    </p><!--Strong is a inline element that means it takes space only within a line of text -->
+                    <p class="video-author">
+                        SponsoredCoinBureau Us
+                    </p>
+                    <p class="video-stats">61K views • 2 days ago</p>
+                    <!--paragraph is a block element== takes up entire line -->
+
+                </div>
+
+            </div>
+
+        </div><!--div are meant to be containers==group elements-->
+
+
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row"><!--nested layout technique Vert-horizontal nesting-->
+                <img class="thumbnail"
+                    src="images\thumbnail\youtube img2.avif"><!--img is a inline-block element== takes only space needed-->
+                <div class="video-time">4:28</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="channel-imginfo" src="images\channel\channel img 2.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        안코하/杏こは - I Do Adore
+                    </p><!--Strong is a inline element that means it takes space only within a line of text -->
+                    <p class="video-author">
+                        하범HABUM
+                    </p>
+                    <p class="video-stats">1,545,446 views Jan 26, 2022</p>
+                    <!--paragraph is a block element== takes up entire line -->
+
+                </div>
+
+            </div>
+
+        </div><!--div are meant to be containers==group elements-->
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row"><!--nested layout technique Vert-horizontal nesting-->
+                <img class="thumbnail"
+                    src="images\thumbnail\youtube img3.avif"><!--img is a inline-block element== takes only space needed-->
+                <div class="video-time">20:32 </div>
+
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="channel-imginfo" src="images\channel\channel img 3.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Coding Snake in CSS?! Kevin Powell Takes the Challenge
+                    </p><!--Strong is a inline element that means it takes space only within a line of text -->
+                    <p class="video-author">
+                        Syntax
+                    </p>
+                    <p class="video-stats">136K views 2 months ago</p>
+                    <!--paragraph is a block element== takes up entire line -->
+
+                </div>
+
+            </div>
+
+        </div><!--div are meant to be containers==group elements-->
+
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row"><!--nested layout technique Vert-horizontal nesting-->
+                <img class="thumbnail"
+                    src="images\thumbnail\youtube img4.jpg"><!--img is a inline-block element== takes only space needed-->
+                <div class="video-time">2:20 </div>
+
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="channel-imginfo" src="images\channel\channel img 4.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        「AMV」- Mix AMV- Light That Fire | MAD•AMV
+                    </p><!--Strong is a inline element that means it takes space only within a line of text -->
+                    <p class="video-author">
+                        MAD AMV
+                    </p>
+                    <p class="video-stats">6.1M views 5 years ago</p>
+                    <!--paragraph is a block element== takes up entire line -->
+
+                </div>
+
+            </div>
+
+        </div><!--div are meant to be containers==group elements-->
+
+
+        <div class="video-preview"> <!--element below another element will show in fornt of the above element -->
+            <!--static position always from at the back-->
+            <div class="thumbnail-row"><!--nested layout technique Vert-horizontal nesting-->
+                <img class="thumbnail"
+                    src="images\thumbnail\youtube img5.avif"><!--img is a inline-block element== takes only space needed-->
+                <div class="video-time">6:18 </div>
+
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="channel-imginfo" src="images\channel\channel img 5.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Oklahoma City Thunder vs Denver Nuggets Full Game 6 Highlights - May 15, 2025 | NBA Playoffs
+
+                    </p><!--Strong is a inline element that means it takes space only within a line of text -->
+                    <p class="video-author">
+                        GAMETIME HIGHLIGHTS
+
+                    </p>
+                    <p class="video-stats"> 1.3M views 15 hours ago</p>
+                    <!--paragraph is a block element== takes up entire line -->
+
+                </div>
+
+            </div>
+
+        </div><!--div are meant to be containers==group elements-->
+
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row"><!--nested layout technique Vert-horizontal nesting-->
+                <img class="thumbnail"
+                    src="images\thumbnail\youtube img6.avif"><!--img is a inline-block element== takes only space needed-->
+                <div class="video-time">45:23 </div>
+
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture ">
+                    <img class="channel-imginfo" src="images\channel\channel img 6.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        How to put an HTML website online (on the Internet)
+                    </p><!--Strong is a inline element that means it takes space only within a line of text -->
+                    <p class="video-author">
+                        SuperSimpleDev
+                    </p>
+                    <p class="video-stats">2.1M views 3 years ago</p>
+                    <!--paragraph is a block element== takes up entire line -->
+
+                </div>
+
+            </div>
+
+        </div><!--div are meant to be containers==group elements-->
+    </div>
+
+
+
+</body>
+
+</html>
